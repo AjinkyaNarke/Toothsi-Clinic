@@ -72,8 +72,8 @@ A modern, responsive dental clinic website built with React, TypeScript, and Tai
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/AjinkyaNarke/-Toothsi-.git
-   cd -Toothsi-
+   git clone https://github.com/AjinkyaNarke/Toothsi-Clinic.git
+   cd Toothsi-Clinic
    ```
 
 2. **Install dependencies**
@@ -225,13 +225,13 @@ src/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 **Author**
+## 👨‍💻 **Developer**
 
-**Ajinkya Narke (AI Engineer)**
+**Dr. Prasad's Lotus Dental Clinic Website**
 - GitHub: [@AjinkyaNarke](https://github.com/AjinkyaNarke)
-- Repository: [Toothsi Dental Clinic](https://github.com/AjinkyaNarke/-Toothsi-)
-- LinkedIn: [Connect with me](https://linkedin.com/in/ajinkya-narke)
-- Email: ajinkya.narke21@gmail.com
+- Repository: [Toothsi Dental Clinic](https://github.com/AjinkyaNarke/Toothsi-Clinic)
+- Website: Dr. Prasad's Lotus Dental Clinic
+- Contact: Professional dental care services
 
 ## 🙏 **Acknowledgments**
 
@@ -243,7 +243,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
-For support, email ajinkya.narke21@gmail.com or create an issue in the [GitHub repository](https://github.com/AjinkyaNarke/-Toothsi-/issues).
+For support, contact Dr. Prasad's Lotus Dental Clinic or create an issue in the [GitHub repository](https://github.com/AjinkyaNarke/Toothsi-Clinic/issues).
 
 ---
 
