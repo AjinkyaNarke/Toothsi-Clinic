@@ -1,4 +1,4 @@
-# 🦷 Ajinkya Narke(Ai Enginner) Clinic Website
+# 🦷 Ajinkya Narke(Ai Enginner) made Toothsi क्लिनिक  Website
 
 A modern, responsive dental clinic website built with React, TypeScript, and Tailwind CSS. Features appointment booking, contact management, and admin dashboard.
 
