@@ -42,29 +42,29 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
             Why Choose Toothsi क्लिनिक?
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             We combine expertise, technology, and personalized care to give you the best dental experience
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="text-center space-y-4 p-6 bg-white rounded-lg hover:shadow-lg transition-shadow duration-300">
+            <div key={index} className="text-center space-y-4 p-6 bg-white dark:bg-gray-900 rounded-lg hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-700">
               <div className="flex justify-center">
-                <div className="p-4 bg-[#4FD1C5]/10 rounded-full">
+                <div className="p-4 bg-[#4FD1C5]/10 dark:bg-[#4FD1C5]/20 rounded-full">
                   {feature.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 {feature.description}
               </p>
             </div>

@@ -1,0 +1,35 @@
+# Vercel ignore file - files/folders to exclude from deployment
+
+# Documentation
+*.md
+!README.md
+
+# Development files
+.env.example
+*.log
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+**/*.test.*
+**/*.spec.*
+**/test/
+**/tests/
+
+# Development scripts
+scripts/
+tools/
+
+# Backup files
+*.bak
+*~

@@ -3,6 +3,47 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Ensure booking buttons are always visible */
+  .booking-button {
+    position: relative;
+    z-index: 50;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+  }
+  
+  .booking-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  }
+  
+  /* Floating action button for booking */
+  .floating-booking-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #FF6B6B, #FF5252);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .floating-booking-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(255, 107, 107, 0.5);
+  }
+  
+  /* Smooth scrolling for all elements */
+  * {
+    scroll-behavior: smooth;
+  }
+  
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -97,5 +138,65 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Cal.com Integration Styles */
+@layer components {
+  .cal-embed-container {
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    border: none;
+    border-radius: 8px;
+    overflow: auto;
+    position: relative;
+  }
+  
+  /* Ensure Cal.com iframe displays properly */
+  .cal-embed-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 700px !important;
+    border: none !important;
+    border-radius: 8px;
+    overflow: auto !important;
+  }
+  
+  /* Cal.com embed specific styles */
+  [data-cal-namespace="tooth-booking"] {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 700px !important;
+    overflow: auto !important;
+  }
+  
+  /* Override any conflicting styles for Cal.com */
+  .cal-embed-container * {
+    box-sizing: border-box;
+  }
+  
+  /* Ensure proper loading state */
+  .cal-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background: #f9fafb;
+  }
+  
+  /* Modal scrolling improvements */
+  .booking-modal-content {
+    max-height: 95vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  /* Ensure calendar is fully visible */
+  .cal-embed-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    overflow: visible;
   }
 }
